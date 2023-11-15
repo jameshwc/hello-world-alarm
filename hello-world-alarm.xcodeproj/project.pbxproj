@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		307A63012B042F7500B37205 /* hello_world_alarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A63002B042F7500B37205 /* hello_world_alarmApp.swift */; };
+		307A63032B042F7500B37205 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A63022B042F7500B37205 /* AlarmView.swift */; };
+		307A63052B042F7700B37205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307A63042B042F7700B37205 /* Assets.xcassets */; };
+		307A63092B042F7700B37205 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307A63082B042F7700B37205 /* Preview Assets.xcassets */; };
+		307A63132B042F7700B37205 /* hello_world_alarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A63122B042F7700B37205 /* hello_world_alarmTests.swift */; };
+		307A631D2B042F7700B37205 /* hello_world_alarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A631C2B042F7700B37205 /* hello_world_alarmUITests.swift */; };
+		307A631F2B042F7700B37205 /* hello_world_alarmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A631E2B042F7700B37205 /* hello_world_alarmUITestsLaunchTests.swift */; };
+		307A632E2B04309700B37205 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A632D2B04309700B37205 /* Sleep.swift */; };
+		307A63302B0430A400B37205 /* SleepStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A632F2B0430A400B37205 /* SleepStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		307A630F2B042F7700B37205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307A62F52B042F7500B37205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 307A62FC2B042F7500B37205;
+			remoteInfo = "hello-world-alarm";
+		};
+		307A63192B042F7700B37205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307A62F52B042F7500B37205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 307A62FC2B042F7500B37205;
+			remoteInfo = "hello-world-alarm";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		307A62FD2B042F7500B37205 /* hello-world-alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hello-world-alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		307A63002B042F7500B37205 /* hello_world_alarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello_world_alarmApp.swift; sourceTree = "<group>"; };
+		307A63022B042F7500B37205 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
+		307A63042B042F7700B37205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		307A63062B042F7700B37205 /* hello_world_alarm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hello_world_alarm.entitlements; sourceTree = "<group>"; };
+		307A63082B042F7700B37205 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		307A630E2B042F7700B37205 /* hello-world-alarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hello-world-alarmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		307A63122B042F7700B37205 /* hello_world_alarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello_world_alarmTests.swift; sourceTree = "<group>"; };
+		307A63182B042F7700B37205 /* hello-world-alarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hello-world-alarmUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		307A631C2B042F7700B37205 /* hello_world_alarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello_world_alarmUITests.swift; sourceTree = "<group>"; };
+		307A631E2B042F7700B37205 /* hello_world_alarmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello_world_alarmUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		307A632D2B04309700B37205 /* Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
+		307A632F2B0430A400B37205 /* SleepStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		307A62FA2B042F7500B37205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307A630B2B042F7700B37205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307A63152B042F7700B37205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		307A62F42B042F7500B37205 = {
+			isa = PBXGroup;
+			children = (
+				307A62FF2B042F7500B37205 /* hello-world-alarm */,
+				307A63112B042F7700B37205 /* hello-world-alarmTests */,
+				307A631B2B042F7700B37205 /* hello-world-alarmUITests */,
+				307A62FE2B042F7500B37205 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		307A62FE2B042F7500B37205 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				307A62FD2B042F7500B37205 /* hello-world-alarm.app */,
+				307A630E2B042F7700B37205 /* hello-world-alarmTests.xctest */,
+				307A63182B042F7700B37205 /* hello-world-alarmUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		307A62FF2B042F7500B37205 /* hello-world-alarm */ = {
+			isa = PBXGroup;
+			children = (
+				307A632C2B042FC900B37205 /* Models */,
+				307A63002B042F7500B37205 /* hello_world_alarmApp.swift */,
+				307A632B2B042F9F00B37205 /* Views */,
+				307A63042B042F7700B37205 /* Assets.xcassets */,
+				307A63062B042F7700B37205 /* hello_world_alarm.entitlements */,
+				307A63072B042F7700B37205 /* Preview Content */,
+			);
+			path = "hello-world-alarm";
+			sourceTree = "<group>";
+		};
+		307A63072B042F7700B37205 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				307A63082B042F7700B37205 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		307A63112B042F7700B37205 /* hello-world-alarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				307A63122B042F7700B37205 /* hello_world_alarmTests.swift */,
+			);
+			path = "hello-world-alarmTests";
+			sourceTree = "<group>";
+		};
+		307A631B2B042F7700B37205 /* hello-world-alarmUITests */ = {
+			isa = PBXGroup;
+			children = (
+				307A631C2B042F7700B37205 /* hello_world_alarmUITests.swift */,
+				307A631E2B042F7700B37205 /* hello_world_alarmUITestsLaunchTests.swift */,
+			);
+			path = "hello-world-alarmUITests";
+			sourceTree = "<group>";
+		};
+		307A632B2B042F9F00B37205 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				307A63022B042F7500B37205 /* AlarmView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		307A632C2B042FC900B37205 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				307A632D2B04309700B37205 /* Sleep.swift */,
+				307A632F2B0430A400B37205 /* SleepStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		307A62FC2B042F7500B37205 /* hello-world-alarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 307A63222B042F7700B37205 /* Build configuration list for PBXNativeTarget "hello-world-alarm" */;
+			buildPhases = (
+				307A62F92B042F7500B37205 /* Sources */,
+				307A62FA2B042F7500B37205 /* Frameworks */,
+				307A62FB2B042F7500B37205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hello-world-alarm";
+			productName = "hello-world-alarm";
+			productReference = 307A62FD2B042F7500B37205 /* hello-world-alarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		307A630D2B042F7700B37205 /* hello-world-alarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 307A63252B042F7700B37205 /* Build configuration list for PBXNativeTarget "hello-world-alarmTests" */;
+			buildPhases = (
+				307A630A2B042F7700B37205 /* Sources */,
+				307A630B2B042F7700B37205 /* Frameworks */,
+				307A630C2B042F7700B37205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				307A63102B042F7700B37205 /* PBXTargetDependency */,
+			);
+			name = "hello-world-alarmTests";
+			productName = "hello-world-alarmTests";
+			productReference = 307A630E2B042F7700B37205 /* hello-world-alarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		307A63172B042F7700B37205 /* hello-world-alarmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 307A63282B042F7700B37205 /* Build configuration list for PBXNativeTarget "hello-world-alarmUITests" */;
+			buildPhases = (
+				307A63142B042F7700B37205 /* Sources */,
+				307A63152B042F7700B37205 /* Frameworks */,
+				307A63162B042F7700B37205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				307A631A2B042F7700B37205 /* PBXTargetDependency */,
+			);
+			name = "hello-world-alarmUITests";
+			productName = "hello-world-alarmUITests";
+			productReference = 307A63182B042F7700B37205 /* hello-world-alarmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		307A62F52B042F7500B37205 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					307A62FC2B042F7500B37205 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					307A630D2B042F7700B37205 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 307A62FC2B042F7500B37205;
+					};
+					307A63172B042F7700B37205 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 307A62FC2B042F7500B37205;
+					};
+				};
+			};
+			buildConfigurationList = 307A62F82B042F7500B37205 /* Build configuration list for PBXProject "hello-world-alarm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 307A62F42B042F7500B37205;
+			productRefGroup = 307A62FE2B042F7500B37205 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				307A62FC2B042F7500B37205 /* hello-world-alarm */,
+				307A630D2B042F7700B37205 /* hello-world-alarmTests */,
+				307A63172B042F7700B37205 /* hello-world-alarmUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		307A62FB2B042F7500B37205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307A63092B042F7700B37205 /* Preview Assets.xcassets in Resources */,
+				307A63052B042F7700B37205 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307A630C2B042F7700B37205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307A63162B042F7700B37205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		307A62F92B042F7500B37205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307A63032B042F7500B37205 /* AlarmView.swift in Sources */,
+				307A63302B0430A400B37205 /* SleepStore.swift in Sources */,
+				307A63012B042F7500B37205 /* hello_world_alarmApp.swift in Sources */,
+				307A632E2B04309700B37205 /* Sleep.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307A630A2B042F7700B37205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307A63132B042F7700B37205 /* hello_world_alarmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307A63142B042F7700B37205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307A631F2B042F7700B37205 /* hello_world_alarmUITestsLaunchTests.swift in Sources */,
+				307A631D2B042F7700B37205 /* hello_world_alarmUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		307A63102B042F7700B37205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 307A62FC2B042F7500B37205 /* hello-world-alarm */;
+			targetProxy = 307A630F2B042F7700B37205 /* PBXContainerItemProxy */;
+		};
+		307A631A2B042F7700B37205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 307A62FC2B042F7500B37205 /* hello-world-alarm */;
+			targetProxy = 307A63192B042F7700B37205 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		307A63202B042F7700B37205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		307A63212B042F7700B37205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		307A63232B042F7700B37205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "hello-world-alarm/hello_world_alarm.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"hello-world-alarm/Preview Content\"";
+				DEVELOPMENT_TEAM = 255R5WC882;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jameshwc.hello-world-alarm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		307A63242B042F7700B37205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "hello-world-alarm/hello_world_alarm.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"hello-world-alarm/Preview Content\"";
+				DEVELOPMENT_TEAM = 255R5WC882;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jameshwc.hello-world-alarm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		307A63262B042F7700B37205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 255R5WC882;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jameshwc.hello-world-alarmTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hello-world-alarm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hello-world-alarm";
+			};
+			name = Debug;
+		};
+		307A63272B042F7700B37205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 255R5WC882;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jameshwc.hello-world-alarmTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hello-world-alarm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hello-world-alarm";
+			};
+			name = Release;
+		};
+		307A63292B042F7700B37205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 255R5WC882;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jameshwc.hello-world-alarmUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "hello-world-alarm";
+			};
+			name = Debug;
+		};
+		307A632A2B042F7700B37205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 255R5WC882;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jameshwc.hello-world-alarmUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "hello-world-alarm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		307A62F82B042F7500B37205 /* Build configuration list for PBXProject "hello-world-alarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307A63202B042F7700B37205 /* Debug */,
+				307A63212B042F7700B37205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		307A63222B042F7700B37205 /* Build configuration list for PBXNativeTarget "hello-world-alarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307A63232B042F7700B37205 /* Debug */,
+				307A63242B042F7700B37205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		307A63252B042F7700B37205 /* Build configuration list for PBXNativeTarget "hello-world-alarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307A63262B042F7700B37205 /* Debug */,
+				307A63272B042F7700B37205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		307A63282B042F7700B37205 /* Build configuration list for PBXNativeTarget "hello-world-alarmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307A63292B042F7700B37205 /* Debug */,
+				307A632A2B042F7700B37205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 307A62F52B042F7500B37205 /* Project object */;
+}
