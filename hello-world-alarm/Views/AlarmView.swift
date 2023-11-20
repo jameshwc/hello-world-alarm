@@ -25,35 +25,41 @@ extension View {
 }
 
 struct AlarmView: View {
-    @State private var hour: Int = 0
-    @State private var minute: Int = 0
-    
+    @ObservedObject var alarm: Alarm
+    @State private var hidePicker: Bool = false
+    @State private var hideConfigure: Bool = true
     var body: some View {
         NavigationStack{
             VStack(alignment: .leading){
                 Spacer()
-                HStack{
-                    Spacer()
-                    Text("\(hour)").font(.title)
-                    Spacer()
-                    Text(":")
-                    Spacer()
-                    Text("\(minute)").font(.title)
-                    Spacer()
+                if hidePicker && hideConfigure {
+                    HStack{
+                        Spacer()
+                        Text(String(format: "%d : %02d", alarm.hour, alarm.minute)).font(.system(size: 64))
+                        Spacer()
+                    }
+                    AlarmButtonView(label: "Set Time") {
+                        self.hidePicker = false
+                        alarm.reset()
+                    }
                 }
-                HStack{
-                    Picker("Hour", selection: $hour){
-                        ForEach((0..<24), id:\.self) { number in
-                            Text("\(number)")
-                        }
-                    }.pickerStyle(.wheel)
-                    Text(":")
-                    Picker("Minute", selection: $minute) {
-                        ForEach((0..<60)) { number in
-                            Text(String(format: "%02d", number))
-                        }
-                    }.pickerStyle(.wheel)
+                if !hidePicker {
+                    AlarmPickerView(hour: $alarm.hour, minute: $alarm.minute)
+                    AlarmButtonView(label: "Confirm"){
+                        self.hidePicker = true
+                        alarm.enable(title: "Alarm")
+                    }
                 }
+//                if hideConfigure && hidePicker {
+//                    AlarmButtonView(label: "Configure") {
+//                        self.hideConfigure = false
+//                    }.padding()
+//                }
+//                if !hideConfigure {
+//                    AlarmButtonView(label: "Confirm") {
+//                        self.hideConfigure = true
+//                    }
+//                }
                 Spacer()
             }
             .navigationTitle("Alarm").navigationBarTitleTextColor(.white)
@@ -63,5 +69,5 @@ struct AlarmView: View {
 }
 
 #Preview {
-    AlarmView().preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+    AlarmView(alarm: Alarm(hour: 0, minute: 0, isRinging: false)).preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
 }

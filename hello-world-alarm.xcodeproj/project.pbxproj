@@ -16,6 +16,17 @@
 		307A631F2B042F7700B37205 /* hello_world_alarmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A631E2B042F7700B37205 /* hello_world_alarmUITestsLaunchTests.swift */; };
 		307A632E2B04309700B37205 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A632D2B04309700B37205 /* Sleep.swift */; };
 		307A63302B0430A400B37205 /* SleepStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A632F2B0430A400B37205 /* SleepStore.swift */; };
+		307A63322B05762500B37205 /* AlarmPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A63312B05762500B37205 /* AlarmPickerView.swift */; };
+		307A63342B05939900B37205 /* AlarmButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A63332B05939900B37205 /* AlarmButtonView.swift */; };
+		307A63362B05955200B37205 /* AlarmConfigureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A63352B05955200B37205 /* AlarmConfigureView.swift */; };
+		307A63382B059A1D00B37205 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A63372B059A1D00B37205 /* RootView.swift */; };
+		307A633A2B059B8200B37205 /* TimeInBedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A63392B059B8200B37205 /* TimeInBedView.swift */; };
+		307A633C2B05A18300B37205 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A633B2B05A18300B37205 /* RingView.swift */; };
+		307A63402B06BC3F00B37205 /* AlarmNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A633F2B06BC3F00B37205 /* AlarmNotificationView.swift */; };
+		307A63442B08528D00B37205 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A63432B08528D00B37205 /* Alarm.swift */; };
+		307A63472B09883600B37205 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A63462B09883600B37205 /* SettingsView.swift */; };
+		307A634B2B0A2D0600B37205 /* iphone_early_riser.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 307A634A2B0A2D0600B37205 /* iphone_early_riser.mp3 */; };
+		307A634E2B0AE99E00B37205 /* SleepChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A634D2B0AE99E00B37205 /* SleepChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +60,18 @@
 		307A631E2B042F7700B37205 /* hello_world_alarmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello_world_alarmUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		307A632D2B04309700B37205 /* Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
 		307A632F2B0430A400B37205 /* SleepStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepStore.swift; sourceTree = "<group>"; };
+		307A63312B05762500B37205 /* AlarmPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPickerView.swift; sourceTree = "<group>"; };
+		307A63332B05939900B37205 /* AlarmButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmButtonView.swift; sourceTree = "<group>"; };
+		307A63352B05955200B37205 /* AlarmConfigureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmConfigureView.swift; sourceTree = "<group>"; };
+		307A63372B059A1D00B37205 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		307A63392B059B8200B37205 /* TimeInBedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInBedView.swift; sourceTree = "<group>"; };
+		307A633B2B05A18300B37205 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		307A633F2B06BC3F00B37205 /* AlarmNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmNotificationView.swift; sourceTree = "<group>"; };
+		307A63432B08528D00B37205 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		307A63452B097B0200B37205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		307A63462B09883600B37205 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		307A634A2B0A2D0600B37205 /* iphone_early_riser.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iphone_early_riser.mp3; sourceTree = "<group>"; };
+		307A634D2B0AE99E00B37205 /* SleepChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +122,12 @@
 		307A62FF2B042F7500B37205 /* hello-world-alarm */ = {
 			isa = PBXGroup;
 			children = (
+				307A63452B097B0200B37205 /* Info.plist */,
 				307A632C2B042FC900B37205 /* Models */,
 				307A63002B042F7500B37205 /* hello_world_alarmApp.swift */,
 				307A632B2B042F9F00B37205 /* Views */,
 				307A63042B042F7700B37205 /* Assets.xcassets */,
+				307A634C2B0A2D4800B37205 /* Ringtones */,
 				307A63062B042F7700B37205 /* hello_world_alarm.entitlements */,
 				307A63072B042F7700B37205 /* Preview Content */,
 			);
@@ -138,6 +163,15 @@
 			isa = PBXGroup;
 			children = (
 				307A63022B042F7500B37205 /* AlarmView.swift */,
+				307A63312B05762500B37205 /* AlarmPickerView.swift */,
+				307A63332B05939900B37205 /* AlarmButtonView.swift */,
+				307A63352B05955200B37205 /* AlarmConfigureView.swift */,
+				307A63372B059A1D00B37205 /* RootView.swift */,
+				307A63392B059B8200B37205 /* TimeInBedView.swift */,
+				307A634D2B0AE99E00B37205 /* SleepChartView.swift */,
+				307A633B2B05A18300B37205 /* RingView.swift */,
+				307A633F2B06BC3F00B37205 /* AlarmNotificationView.swift */,
+				307A63462B09883600B37205 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -147,8 +181,17 @@
 			children = (
 				307A632D2B04309700B37205 /* Sleep.swift */,
 				307A632F2B0430A400B37205 /* SleepStore.swift */,
+				307A63432B08528D00B37205 /* Alarm.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		307A634C2B0A2D4800B37205 /* Ringtones */ = {
+			isa = PBXGroup;
+			children = (
+				307A634A2B0A2D0600B37205 /* iphone_early_riser.mp3 */,
+			);
+			path = Ringtones;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				307A63092B042F7700B37205 /* Preview Assets.xcassets in Resources */,
+				307A634B2B0A2D0600B37205 /* iphone_early_riser.mp3 in Resources */,
 				307A63052B042F7700B37205 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,10 +325,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307A633C2B05A18300B37205 /* RingView.swift in Sources */,
+				307A63382B059A1D00B37205 /* RootView.swift in Sources */,
+				307A633A2B059B8200B37205 /* TimeInBedView.swift in Sources */,
 				307A63032B042F7500B37205 /* AlarmView.swift in Sources */,
 				307A63302B0430A400B37205 /* SleepStore.swift in Sources */,
+				307A63442B08528D00B37205 /* Alarm.swift in Sources */,
+				307A63342B05939900B37205 /* AlarmButtonView.swift in Sources */,
+				307A63472B09883600B37205 /* SettingsView.swift in Sources */,
+				307A63362B05955200B37205 /* AlarmConfigureView.swift in Sources */,
 				307A63012B042F7500B37205 /* hello_world_alarmApp.swift in Sources */,
 				307A632E2B04309700B37205 /* Sleep.swift in Sources */,
+				307A634E2B0AE99E00B37205 /* SleepChartView.swift in Sources */,
+				307A63402B06BC3F00B37205 /* AlarmNotificationView.swift in Sources */,
+				307A63322B05762500B37205 /* AlarmPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +495,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "hello-world-alarm/hello_world_alarm.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"hello-world-alarm/Preview Content\"";
@@ -448,6 +503,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hello-world-alarm/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -479,6 +535,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "hello-world-alarm/hello_world_alarm.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"hello-world-alarm/Preview Content\"";
@@ -486,6 +543,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hello-world-alarm/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
