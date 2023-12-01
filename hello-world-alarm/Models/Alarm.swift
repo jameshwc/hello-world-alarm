@@ -13,7 +13,8 @@ class Alarm: ObservableObject {
     @Published var minute: Int
     @Published var audioPlayer: AVAudioPlayer?
     @Published var isRinging: Bool
-    var isEnable: Bool
+    @Published var sleep: Sleep?
+    @Published var isEnable: Bool
     
     init(hour: Int, minute: Int, isRinging: Bool) {
         self.hour = hour
@@ -36,9 +37,24 @@ extension Alarm {
             fatalError("Failed to find 'iphone_early_riser' ringtone")
         }
         self.audioPlayer = try! AVAudioPlayer(contentsOf: soundURL)
-        print(self.hour, self.minute)
         self.isEnable = true
+        self.sleep = Sleep(startTime: Date())
         let ringFile: String = "iphone_early_riser.mp3"
+        self.generateNotification(id: id, title: title)
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+            guard self.isEnable else {
+                timer.invalidate()
+                return
+            }
+            let components = Calendar.current.dateComponents([.hour, .minute], from: Date())
+            if components.minute == self.minute && components.hour == self.hour {
+                self.playSound(ringFile: ringFile)
+                timer.invalidate()
+            }
+        }
+    }
+    
+    func generateNotification(id: String = UUID().uuidString, title: String) {
         let content = UNMutableNotificationContent()
         content.title = title
         content.subtitle = "Alarm has been triggered!"
@@ -52,17 +68,6 @@ extension Alarm {
         UNUserNotificationCenter.current().add(request) { (error) in
             if error != nil {
                 let _ = print(error ?? "error")
-            }
-        }
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-            guard self.isEnable else {
-                timer.invalidate()
-                return
-            }
-            let components = Calendar.current.dateComponents([.hour, .minute], from: Date())
-            if components.minute == dateComponents.minute && components.hour == dateComponents.hour {
-                self.playSound(ringFile: ringFile)
-                timer.invalidate()
             }
         }
     }
@@ -82,5 +87,10 @@ extension Alarm {
         self.audioPlayer!.stop()
         self.reset()
         self.isRinging = false
+        if let _ = self.sleep {
+            self.sleep!.endTime = Date()
+        } else {
+            fatalError("Alarm.sleep is nil") // TODO error view
+        }
     }
 }

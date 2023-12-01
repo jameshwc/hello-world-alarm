@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RootView: View {
+    @Binding var sleeps: [Sleep]
+    let saveAction: (Sleep) -> Void
     @StateObject var alarm: Alarm = Alarm(
         hour: Calendar.current.component(.hour, from: Date()),
         minute: Calendar.current.component(.minute, from: Date()),
@@ -15,13 +17,13 @@ struct RootView: View {
     
     var body: some View {
         if let audioPlayer = alarm.audioPlayer, audioPlayer.isPlaying {
-            RingView(alarm: alarm)
+            RingView(alarm: alarm, saveSleep: saveAction)
         } else {
             TabView{
-                AlarmView(alarm: alarm).tabItem {
+                AlarmView(alarm: alarm, saveSleep: saveAction).tabItem {
                     Label("Alarm", systemImage: "alarm.waves.left.and.right")
                 }
-                TimeInBedView().tabItem {
+                TimeInBedView(sleeps: $sleeps).tabItem {
                     Label("Time in bed", systemImage: "bed.double")
                 }
             }.tint(Color.orange)
@@ -30,5 +32,5 @@ struct RootView: View {
 }
 
 #Preview {
-    RootView().preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+    RootView(sleeps: .constant(Sleep.sampleData), saveAction: {_ in}).preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
 }

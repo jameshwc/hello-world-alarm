@@ -36,4 +36,9 @@ class SleepStore: ObservableObject {
         }
         try await task.value
     }
+    
+    func add(sleep: Sleep) async throws {
+        self.sleeps.append(sleep)
+        try await self.save()
+    }
 }

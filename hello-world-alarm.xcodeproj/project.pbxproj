@@ -27,6 +27,9 @@
 		307A63472B09883600B37205 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A63462B09883600B37205 /* SettingsView.swift */; };
 		307A634B2B0A2D0600B37205 /* iphone_early_riser.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 307A634A2B0A2D0600B37205 /* iphone_early_riser.mp3 */; };
 		307A634E2B0AE99E00B37205 /* SleepChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A634D2B0AE99E00B37205 /* SleepChartView.swift */; };
+		307A63502B0EC7ED00B37205 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A634F2B0EC7ED00B37205 /* ErrorView.swift */; };
+		307A63542B0EC86400B37205 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A63532B0EC86400B37205 /* ErrorWrapper.swift */; };
+		307A63562B12A7B500B37205 /* SleepChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A63552B12A7B500B37205 /* SleepChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		307A63462B09883600B37205 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		307A634A2B0A2D0600B37205 /* iphone_early_riser.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iphone_early_riser.mp3; sourceTree = "<group>"; };
 		307A634D2B0AE99E00B37205 /* SleepChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepChartView.swift; sourceTree = "<group>"; };
+		307A634F2B0EC7ED00B37205 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		307A63532B0EC86400B37205 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		307A63552B12A7B500B37205 /* SleepChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,7 @@
 				307A633B2B05A18300B37205 /* RingView.swift */,
 				307A633F2B06BC3F00B37205 /* AlarmNotificationView.swift */,
 				307A63462B09883600B37205 /* SettingsView.swift */,
+				307A634F2B0EC7ED00B37205 /* ErrorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,8 +187,10 @@
 			isa = PBXGroup;
 			children = (
 				307A632D2B04309700B37205 /* Sleep.swift */,
+				307A63552B12A7B500B37205 /* SleepChart.swift */,
 				307A632F2B0430A400B37205 /* SleepStore.swift */,
 				307A63432B08528D00B37205 /* Alarm.swift */,
+				307A63532B0EC86400B37205 /* ErrorWrapper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -332,9 +341,12 @@
 				307A63302B0430A400B37205 /* SleepStore.swift in Sources */,
 				307A63442B08528D00B37205 /* Alarm.swift in Sources */,
 				307A63342B05939900B37205 /* AlarmButtonView.swift in Sources */,
+				307A63562B12A7B500B37205 /* SleepChart.swift in Sources */,
 				307A63472B09883600B37205 /* SettingsView.swift in Sources */,
+				307A63542B0EC86400B37205 /* ErrorWrapper.swift in Sources */,
 				307A63362B05955200B37205 /* AlarmConfigureView.swift in Sources */,
 				307A63012B042F7500B37205 /* hello_world_alarmApp.swift in Sources */,
+				307A63502B0EC7ED00B37205 /* ErrorView.swift in Sources */,
 				307A632E2B04309700B37205 /* Sleep.swift in Sources */,
 				307A634E2B0AE99E00B37205 /* SleepChartView.swift in Sources */,
 				307A63402B06BC3F00B37205 /* AlarmNotificationView.swift in Sources */,

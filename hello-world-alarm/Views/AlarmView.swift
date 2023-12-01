@@ -26,27 +26,34 @@ extension View {
 
 struct AlarmView: View {
     @ObservedObject var alarm: Alarm
-    @State private var hidePicker: Bool = false
     @State private var hideConfigure: Bool = true
+    var saveSleep: (Sleep) -> Void
     var body: some View {
         NavigationStack{
             VStack(alignment: .leading){
                 Spacer()
-                if hidePicker && hideConfigure {
+                if alarm.isEnable && hideConfigure {
                     HStack{
                         Spacer()
                         Text(String(format: "%d : %02d", alarm.hour, alarm.minute)).font(.system(size: 64))
                         Spacer()
                     }
                     AlarmButtonView(label: "Set Time") {
-                        self.hidePicker = false
                         alarm.reset()
                     }
+                    if alarm.isEnable {
+                        AlarmButtonView(label: "Clear Alarm") {
+                            alarm.reset()
+                        }.padding()
+                        AlarmButtonView(label: "I've waken up") {
+                            alarm.stop()
+                            saveSleep(alarm.sleep!) // TODO: better handle optional
+                        }
+                    }
                 }
-                if !hidePicker {
+                if !alarm.isEnable {
                     AlarmPickerView(hour: $alarm.hour, minute: $alarm.minute)
                     AlarmButtonView(label: "Confirm"){
-                        self.hidePicker = true
                         alarm.enable(title: "Alarm")
                     }
                 }
@@ -69,5 +76,5 @@ struct AlarmView: View {
 }
 
 #Preview {
-    AlarmView(alarm: Alarm(hour: 0, minute: 0, isRinging: false)).preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+    AlarmView(alarm: Alarm(hour: 0, minute: 0, isRinging: false), saveSleep: {_ in}).preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
 }

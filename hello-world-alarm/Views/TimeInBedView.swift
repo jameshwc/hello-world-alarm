@@ -7,27 +7,23 @@
 
 import SwiftUI
 
-enum sleepChartDuration: String, Identifiable, CaseIterable {
-    case day, week, month, six_months = "6 Months"
-    var id: Self { self }
-}
-
 struct TimeInBedView: View {
-    @State var sleepChart: sleepChartDuration = sleepChartDuration.day
+    @Binding var sleeps: [Sleep]
+    @State var sleepChartDurationUnit: sleepChartDuration = sleepChartDuration.day
     var body: some View {
         NavigationStack {
             VStack {
-                Picker("Sleep Chart", selection: $sleepChart){
+                Picker("Sleep Chart", selection: $sleepChartDurationUnit){
                     ForEach(sleepChartDuration.allCases) { duration in
                         Text(duration.rawValue.capitalized).tag(duration.rawValue)
                     }
                 }.tint(.orange).pickerStyle(.segmented).padding()
-                SleepChartView(sleeps: [], duration: sleepChart)
+                SleepChartView(sleepCharts: SleepCharts(sleeps: sleeps, durationKind: sleepChartDurationUnit))
             }.navigationTitle("Time in Bed").navigationBarTitleTextColor(.white)
         }
     }
 }
 
 #Preview {
-    TimeInBedView().preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+    TimeInBedView(sleeps: .constant(Sleep.sampleData)).preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
 }
